@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      background-color: #000;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .Red{
+      background-color: #E72F24;
+      order:-1;
+    }
+    .White{
+      background-color: #F0F1EC; 
+      grid-column: span 3;
+    }
+    .White2{
+      background-color: #F0F1EC; 
+      grid-row: span 2;
+    }
+    .White3{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2; 
+    }
+    .Blue{
+      background-color: #004592;
+      grid-row-start: -4;
+      grid-column-start: -2;
+    }
+    .White4{
+      border-top: #000 solid 10px;
+      background-color: #F0F1EC;
+      grid-row: span 2;  
+    }
+    .White5{
+      background-color: #F0F1EC;
+    }
+    .Yellow{
+      background-color: #F9D01E;
+    }
+    .Black{
+      background-color: #232629;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="White"></div>
+    <div class="White2"></div>
+    <div class="White3"></div>
+    <div class="Red"></div>
+    <div class="Blue"></div>
+    <div class="White4"></div>
+    <div class="White5"></div>
+    <div class="Yellow"></div>
+    <div class="Black"></div>
+  </div>
+  <p style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MONDRIAN ART by Albert</p>
+</body>
+
+</html>
